@@ -11,7 +11,6 @@ class NoCoordinatorVC: UITabBarController {
         super.viewDidLoad()
     }
     
-    
     init() {
         // TODO: 왜 아래 로직이 필요한지
         super.init(nibName: nil, bundle: nil)
