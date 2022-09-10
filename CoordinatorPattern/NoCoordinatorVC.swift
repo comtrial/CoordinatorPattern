@@ -10,7 +10,6 @@ class NoCoordinatorVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-   
     
     init() {
         // TODO: 왜 아래 로직이 필요한지
