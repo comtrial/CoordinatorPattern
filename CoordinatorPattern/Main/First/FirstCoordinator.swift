@@ -18,7 +18,7 @@ import UIKit
 class FirstCoordinator: Coordinator {
     var rootViewController = UINavigationController()
     lazy var firstViewController = FirstViewController()
-    lazy var detailViewController = DetailViewController()
+//    lazy var detailViewController = DetailViewController()
 //
     func start() {
         self.rootViewController = UINavigationController(rootViewController: self.firstViewController)

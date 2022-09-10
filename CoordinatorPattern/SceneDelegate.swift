@@ -20,9 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let mainCoordinator = MainCoordinator()
             mainCoordinator.start()
             window.rootViewController = mainCoordinator.rootViewController
+
             
-            
-            //for NoCoor window.rootViewController = NoCoordinatorVC()
+//            window.rootViewController = NoCoordinatorVC()
             
             self.window = window
             window.makeKeyAndVisible()

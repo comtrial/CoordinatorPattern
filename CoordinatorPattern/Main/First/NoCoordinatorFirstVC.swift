@@ -32,7 +32,7 @@ class NoCoordinatorFirstVC: UIViewController{
         text.text = "First"
         
         button.setTitle("Move to detail pagee", for: .normal)
-        button.addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         button.backgroundColor = .systemBlue
 
         // MARK: UI Component Layout setup
@@ -44,7 +44,7 @@ class NoCoordinatorFirstVC: UIViewController{
         button.heightAnchor.constraint(equalToConstant: 24).isActive = true
     }
     
-    @objc private func buttonPressed(_: UIButton) {
+    @objc private func buttonPressed() {
         print("click")
         // MARK: setup page router
         let detailViewController = DetailViewController()
