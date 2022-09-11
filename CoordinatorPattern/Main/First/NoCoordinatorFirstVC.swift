@@ -31,7 +31,7 @@ class NoCoordinatorFirstVC: UIViewController{
         // MARK: UI Component attribute setup
         text.text = "First"
         
-        button.setTitle("Move to detail pagee", for: .normal)
+        button.setTitle("Move to detail page", for: .normal)
         button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         button.backgroundColor = .systemBlue
 

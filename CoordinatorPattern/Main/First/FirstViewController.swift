@@ -32,7 +32,7 @@ class FirstViewController: UIViewController {
         // MARK: UI Component attribute setup
         text.text = "First"
         
-        button.setTitle("Move to detail pagee", for: .normal)
+        button.setTitle("Move to detail page", for: .normal)
         button.addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
         button.backgroundColor = .systemBlue
 
@@ -48,22 +48,13 @@ class FirstViewController: UIViewController {
     @objc private func buttonPressed(_: UIButton) {
         if let nvc: UINavigationController = self.navigationController {
             print("nvc unwrapping success")
-            
             // TODO: 아래에서 DetailCoordinator 를 등록하고 start 걸어주고 push 해주는 과정이 어색하다,.
             let coordinator = DetailCoordinator()
-//            if let _: DetailCoordinator = coordinator{
-//                print("coord unwrapping succ")
-//            } else {
-//                print("coord unwrap fail")
-//            }
-            
             coordinator.start()
             coordinator.pushToDetail(navigationController: nvc)
         } else {
-            
             print("nvc unwrapping failed")
             return
-            
         }
     }
 }

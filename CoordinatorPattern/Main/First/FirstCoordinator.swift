@@ -18,10 +18,14 @@ import UIKit
 class FirstCoordinator: Coordinator {
     var rootViewController = UINavigationController()
     lazy var firstViewController = FirstViewController()
-//    lazy var detailViewController = DetailViewController()
-//
+    
     func start() {
         self.rootViewController = UINavigationController(rootViewController: self.firstViewController)
 //        self.rootViewController.setViewControllers([firstViewController, detailViewController], animated: true)
+    }
+    
+    func pushToDetail(navigationController: UINavigationController) {
+        print("push func did load")
+        navigationController.pushViewController(DetailViewController(), animated: true)
     }
 }

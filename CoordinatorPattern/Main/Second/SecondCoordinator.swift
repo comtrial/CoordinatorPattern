@@ -9,9 +9,10 @@ import Foundation
 import UIKit
 
 class SecondCoordinator: Coordinator {
-    var rootViewController = UIViewController()
+    var rootViewController = UINavigationController()
+    lazy var secondViewController = SecondViewController()
     
     func start() {
-        self.rootViewController = SecondViewController()
+        self.rootViewController = UINavigationController(rootViewController: self.secondViewController)
     }
 }
