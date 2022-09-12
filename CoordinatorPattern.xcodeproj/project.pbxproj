@@ -76,12 +76,12 @@
 			children = (
 				F621E7AA28C9A98100B3285C /* Main */,
 				F621E79628C9A58C00B3285C /* AppDelegate.swift */,
+				F621E7B028C9A9E800B3285C /* Coordinator.swift */,
 				F621E79828C9A58C00B3285C /* SceneDelegate.swift */,
 				F621E79A28C9A58C00B3285C /* NoCoordinatorVC.swift */,
 				F621E79F28C9A59100B3285C /* Assets.xcassets */,
 				F621E7A128C9A59100B3285C /* LaunchScreen.storyboard */,
 				F621E7A428C9A59100B3285C /* Info.plist */,
-				F621E7B028C9A9E800B3285C /* Coordinator.swift */,
 			);
 			path = CoordinatorPattern;
 			sourceTree = "<group>";

@@ -12,6 +12,8 @@ class SecondViewController: UIViewController {
     private var button: UIButton = UIButton()
     private var text: UILabel = UILabel()
     
+    weak var coordinator: DetailCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -48,15 +50,15 @@ class SecondViewController: UIViewController {
             
             // TODO: 아래에서 DetailCoordinator 를 등록하고 start 걸어주고 push 해주는 과정이 어색하다,.
             // -> Coordinator 사용법이 아예 틀렸음
-            let coordinator = DetailCoordinator()
-//            if let _: DetailCoordinator = coordinator{
-//                print("coord unwrapping succ")
-//            } else {
-//                print("coord unwrap fail")
-//            }
-            
-            coordinator.start()
-            coordinator.pushToDetail(navigationController: nvc)
+//            let coordinator = DetailCoordinator()
+////            if let _: DetailCoordinator = coordinator{
+////                print("coord unwrapping succ")
+////            } else {
+////                print("coord unwrap fail")
+////            }
+//
+//            coordinator.start()
+            coordinator?.pushToDetail(navigationController: nvc)
         } else {
             
             print("nvc unwrapping failed")

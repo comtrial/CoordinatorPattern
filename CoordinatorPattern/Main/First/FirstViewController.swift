@@ -13,7 +13,7 @@ class FirstViewController: UIViewController {
     private var button: UIButton = UIButton()
     
     // TODO: 내 생각엔 VC 가 Coordinator 를 가지고 있는 모양이 어색하다고 생각하는데 좀더 알아봐주라
-    weak var coordinator: DetailCoordinator?
+    lazy var coordinator = DetailCoordinator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,10 +47,8 @@ class FirstViewController: UIViewController {
     
     @objc private func buttonPressed(_: UIButton) {
         if let nvc: UINavigationController = self.navigationController {
-            print("nvc unwrapping success")
+            print("nvc unwrapping successddd")
             // TODO: 아래에서 DetailCoordinator 를 등록하고 start 걸어주고 push 해주는 과정이 어색하다,.
-            let coordinator = DetailCoordinator()
-            coordinator.start()
             coordinator.pushToDetail(navigationController: nvc)
         } else {
             print("nvc unwrapping failed")

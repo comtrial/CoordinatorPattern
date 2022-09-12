@@ -12,7 +12,7 @@ import UIKit
     // -> 중요하게 실수한 부분인 것 같아.
 
 // TODO: self.UITabBarController 에 VC 등록하는 방법론 compare with NoCoorinatorVC
-class MainCoordinator: Coordinator {
+class MainCoordinator {
     var rootViewController: UITabBarController
     var childCoordinator = [Coordinator]()
     
@@ -21,7 +21,6 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        
         // MARK: setup first page
         let firstCoordinator = FirstCoordinator()
         firstCoordinator.start()

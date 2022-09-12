@@ -21,11 +21,7 @@ class FirstCoordinator: Coordinator {
     
     func start() {
         self.rootViewController = UINavigationController(rootViewController: self.firstViewController)
-//        self.rootViewController.setViewControllers([firstViewController, detailViewController], animated: true)
     }
     
-    func pushToDetail(navigationController: UINavigationController) {
-        print("push func did load")
-        navigationController.pushViewController(DetailViewController(), animated: true)
-    }
+
 }
