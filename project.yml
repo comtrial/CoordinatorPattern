@@ -1,0 +1,11 @@
+name: CoordinatorPattern
+targets:
+  ProjectName:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [CoordinatorPattern]
+    settings:
+      base:
+        INFOPLIST_FILE: CoordinatorPattern/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.app
